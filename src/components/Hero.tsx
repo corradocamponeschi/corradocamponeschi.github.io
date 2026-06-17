@@ -4,27 +4,30 @@ import heroImage from "../assets/hero-lake-movement.webp";
 
 export function Hero() {
   return (
-    <section className="hero section-anchor" id="top" aria-labelledby="hero-title">
+    <section className="hero section-anchor reveal" id="top" aria-labelledby="hero-title">
       <div className="hero-copy">
-        <h1 id="hero-title">Integrare corpo, mente e spirito</h1>
+        <h1 id="hero-title">Sessualità autentica, corpo vivo e maturità emotiva</h1>
         <p>
-          Yoga esoterico, mindfulness e percorsi di consapevolezza per abitare
-          con autenticita il proprio potenziale.
+          Percorsi individuali e di gruppo per uomini e coppie che desiderano
+          uscire dalla prestazione e ritrovare presenza, piacere, ascolto e
+          verità nel corpo.
         </p>
         <div className="hero-actions" aria-label="Azioni principali">
-          <LinkButton href="#percorsi">Inizia un percorso</LinkButton>
-          <LinkButton href="#progetti" variant="secondary">
-            Scopri i progetti
+          <LinkButton href="#contatti">Prenota una call conoscitiva</LinkButton>
+          <LinkButton href="#metodo" variant="secondary">
+            Scopri il metodo
           </LinkButton>
         </div>
-        <WingGlyph />
+        <div className="hero-symbol">
+          <WingGlyph />
+        </div>
       </div>
 
       <div className="hero-media" aria-hidden="true">
         <img src={heroImage} alt="" />
       </div>
 
-      <a className="scroll-cue" href="#chi-sono" aria-label="Vai alla sezione Chi sono">
+      <a className="scroll-cue" href="#manifesto" aria-label="Vai alla sezione Manifesto">
         <span />
       </a>
     </section>

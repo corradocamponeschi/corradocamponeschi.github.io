@@ -4,11 +4,11 @@ import { VerticalGlyph } from "./Symbols";
 
 export function Approach() {
   return (
-    <section className="approach section-anchor" id="chi-sono" aria-labelledby="approach-title">
+    <section className="approach section-anchor reveal" id="chi-sono" aria-labelledby="approach-title">
       <div className="section-shell approach-grid">
         <VerticalGlyph />
         <div className="approach-copy">
-          <h2 id="approach-title">Radici, ricerca e presenza</h2>
+          <h2 id="approach-title">Chi sono</h2>
           {approachParagraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}

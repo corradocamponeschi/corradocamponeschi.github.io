@@ -1,20 +1,26 @@
-import { paths } from "../content";
+import { methodAreas } from "../content";
 import { PathSymbol } from "./Symbols";
 
 export function Paths() {
   return (
-    <section className="paths section-anchor" id="percorsi" aria-labelledby="paths-title">
+    <section className="paths method section-anchor reveal" id="metodo" aria-labelledby="method-title">
       <div className="section-shell">
         <div className="section-heading section-heading--center">
-          <h2 id="paths-title">Percorsi</h2>
+          <h2 id="method-title">Il Metodo Corpo–Cuore–Desiderio</h2>
           <p>
-            Pratiche e spazi di studio per aprire un dialogo reale tra energia,
-            corpo, relazione e coscienza.
+            Un lavoro integrato su corpo, emozioni, desiderio, energia e
+            relazione.
+          </p>
+          <p className="section-intro">
+            Il percorso unisce pratiche corporee, respiro, yoga, bioenergetica,
+            comunicazione empatica e strumenti della tradizione tantrica e
+            taoista. Non come tecniche da accumulare, ma come vie per tornare a
+            sentire.
           </p>
         </div>
 
         <div className="paths-rail">
-          {paths.map((path) => (
+          {methodAreas.map((path) => (
             <article className="path-item" key={path.title}>
               <PathSymbol icon={path.icon} />
               <h3>{path.title}</h3>

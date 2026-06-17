@@ -1,7 +1,7 @@
-import type { Path } from "../content";
+import type { MethodArea } from "../content";
 
 type PathSymbolProps = {
-  icon: Path["icon"];
+  icon: MethodArea["icon"];
 };
 
 export function PathSymbol({ icon }: PathSymbolProps) {

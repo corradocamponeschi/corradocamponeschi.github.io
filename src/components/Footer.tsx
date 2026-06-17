@@ -1,11 +1,17 @@
 import { Instagram, Mail, MessageCircle } from "lucide-react";
 import { contactLinks, instagramLink, mailtoLink, navItems, whatsappLink } from "../content";
 
-const footerMessage = "Ciao Corrado, vorrei ricevere informazioni sui tuoi percorsi.";
+const footerMessage = "Ciao Corrado, vorrei prenotare una call conoscitiva.";
+const privacyMessage =
+  "Ciao Corrado, vorrei ricevere informazioni sulla privacy e sul trattamento dei dati.";
 
 export function Footer() {
   return (
     <footer className="site-footer">
+      <p className="footer-manifesto">
+        Dal controllo alla presenza. Dalla prestazione all’intimità. Dal corpo
+        dimenticato al corpo vivo.
+      </p>
       <div className="footer-main">
         <div>
           <a className="footer-brand" href="#top">
@@ -37,6 +43,9 @@ export function Footer() {
       <p className="copyright">
         2026 Corrado Camponeschi. Tutti i diritti riservati.
       </p>
+      <div className="footer-utility">
+        <a href={mailtoLink("Privacy", privacyMessage)}>Privacy</a>
+      </div>
     </footer>
   );
 }

@@ -3,7 +3,7 @@ import { LinkButton } from "./LinkButton";
 
 export function Projects() {
   return (
-    <section className="projects section-anchor" id="progetti" aria-labelledby="projects-title">
+    <section className="projects section-anchor reveal" id="progetti" aria-labelledby="projects-title">
       <h2 className="sr-only" id="projects-title">
         Progetti
       </h2>

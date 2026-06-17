@@ -3,26 +3,28 @@ import { contactLinks, instagramLink, mailtoLink, whatsappLink } from "../conten
 import lakeImage from "../assets/lake-sunset.webp";
 
 const contactMessage =
-  "Ciao Corrado, ho visitato il tuo sito e vorrei ricevere informazioni sui percorsi.";
+  "Ciao Corrado, vorrei prenotare una call conoscitiva per capire da dove iniziare.";
 
 export function Contact() {
   return (
-    <section className="contact section-anchor" id="contatti" aria-labelledby="contact-title">
+    <section className="contact section-anchor reveal" id="contatti" aria-labelledby="contact-title">
       <div className="section-shell contact-grid">
         <div className="contact-card">
-          <h2 id="contact-title">Contatto</h2>
+          <h2 id="contact-title">Vuoi iniziare da una conversazione?</h2>
           <p>
-            Se senti una risonanza, scrivimi. Saro felice di ascoltarti e
-            rispondere alle tue domande.
+            Se senti che questo lavoro risuona con il momento che stai
+            attraversando, puoi scrivermi per una call conoscitiva. Sarà uno
+            spazio semplice e senza impegno per capire quale percorso può essere
+            più adatto a te.
           </p>
           <div className="contact-actions" aria-label="Canali di contatto">
-            <a href={mailtoLink("Richiesta informazioni", contactMessage)}>
-              <Mail size={18} aria-hidden="true" />
-              <span>{contactLinks.email}</span>
-            </a>
             <a href={whatsappLink(contactMessage)} target="_blank" rel="noreferrer">
               <MessageCircle size={18} aria-hidden="true" />
-              <span>Scrivimi su WhatsApp</span>
+              <span>Prenota una call conoscitiva</span>
+            </a>
+            <a href={mailtoLink("Call conoscitiva", contactMessage)}>
+              <Mail size={18} aria-hidden="true" />
+              <span>Scrivimi</span>
             </a>
             <a href={instagramLink()} target="_blank" rel="noreferrer">
               <Instagram size={18} aria-hidden="true" />
