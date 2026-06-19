@@ -6,10 +6,9 @@ export function Paths() {
     <section className="paths method section-anchor reveal" id="metodo" aria-labelledby="method-title">
       <div className="section-shell">
         <div className="section-heading section-heading--center">
-          <h2 id="method-title">Il Metodo Corpo–Cuore–Desiderio</h2>
+          <h2 id="method-title">Il metodo</h2>
           <p>
-            Un lavoro integrato su corpo, emozioni, desiderio, energia e
-            relazione.
+            Un lavoro integrato su corpo, respiro, confini e intimità.
           </p>
           <p className="section-intro">
             Il percorso unisce pratiche corporee, respiro, yoga, bioenergetica,

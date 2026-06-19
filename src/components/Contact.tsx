@@ -1,9 +1,6 @@
 import { Instagram, Mail, MessageCircle } from "lucide-react";
-import { contactLinks, instagramLink, mailtoLink, whatsappLink } from "../content";
+import { contactLinks, freeCallMessage, instagramLink, mailtoLink, whatsappLink } from "../content";
 import lakeImage from "../assets/lake-sunset.webp";
-
-const contactMessage =
-  "Ciao Corrado, vorrei prenotare una call conoscitiva per capire da dove iniziare.";
 
 export function Contact() {
   return (
@@ -13,16 +10,16 @@ export function Contact() {
           <h2 id="contact-title">Vuoi iniziare da una conversazione?</h2>
           <p>
             Se senti che questo lavoro risuona con il momento che stai
-            attraversando, puoi scrivermi per una call conoscitiva. Sarà uno
+            attraversando, puoi scrivermi per una call conoscitiva gratuita. Sarà uno
             spazio semplice e senza impegno per capire quale percorso può essere
             più adatto a te.
           </p>
           <div className="contact-actions" aria-label="Canali di contatto">
-            <a href={whatsappLink(contactMessage)} target="_blank" rel="noreferrer">
+            <a href={whatsappLink(freeCallMessage)} target="_blank" rel="noreferrer">
               <MessageCircle size={18} aria-hidden="true" />
-              <span>Prenota una call conoscitiva</span>
+              <span>Richiedi una call gratuita</span>
             </a>
-            <a href={mailtoLink("Call conoscitiva", contactMessage)}>
+            <a href={mailtoLink("Call conoscitiva gratuita", freeCallMessage)}>
               <Mail size={18} aria-hidden="true" />
               <span>Scrivimi</span>
             </a>

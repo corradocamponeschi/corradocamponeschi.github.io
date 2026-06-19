@@ -1,7 +1,14 @@
-import { Instagram, Mail, MessageCircle } from "lucide-react";
-import { contactLinks, instagramLink, mailtoLink, navItems, whatsappLink } from "../content";
+import { Instagram, Mail, MessageCircle, Youtube } from "lucide-react";
+import {
+  contactLinks,
+  freeCallMessage,
+  instagramLink,
+  mailtoLink,
+  navItems,
+  whatsappLink,
+  youtubeLink,
+} from "../content";
 
-const footerMessage = "Ciao Corrado, vorrei prenotare una call conoscitiva.";
 const privacyMessage =
   "Ciao Corrado, vorrei ricevere informazioni sulla privacy e sul trattamento dei dati.";
 
@@ -14,7 +21,7 @@ export function Footer() {
       </p>
       <div className="footer-main">
         <div>
-          <a className="footer-brand" href="#top">
+          <a className="footer-brand" href="/">
             Corrado Camponeschi
           </a>
           <div className="footer-line" aria-hidden="true" />
@@ -32,10 +39,13 @@ export function Footer() {
           <a href={instagramLink()} target="_blank" rel="noreferrer" aria-label="Instagram">
             <Instagram size={21} />
           </a>
-          <a href={whatsappLink(footerMessage)} target="_blank" rel="noreferrer" aria-label="WhatsApp">
+          <a href={youtubeLink()} target="_blank" rel="noreferrer" aria-label="YouTube">
+            <Youtube size={22} />
+          </a>
+          <a href={whatsappLink(freeCallMessage)} target="_blank" rel="noreferrer" aria-label="WhatsApp">
             <MessageCircle size={21} />
           </a>
-          <a href={mailtoLink("Richiesta informazioni", footerMessage)} aria-label={contactLinks.email}>
+          <a href={mailtoLink("Richiesta informazioni", freeCallMessage)} aria-label={contactLinks.email}>
             <Mail size={21} />
           </a>
         </div>
