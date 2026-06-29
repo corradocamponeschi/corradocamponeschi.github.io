@@ -104,8 +104,18 @@ export default function App() {
 
       event.preventDefault();
       const normalizedPath = candidatePath as PagePath;
-      window.history.pushState(null, "", normalizedPath);
+      window.history.pushState(null, "", `${normalizedPath}${url.hash}`);
       setRoute(normalizedPath);
+
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          if (url.hash) {
+            scrollToHash(url.hash, true);
+          } else {
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+          }
+        });
+      });
     };
 
     document.addEventListener("click", handleAnchorClick);
@@ -115,7 +125,7 @@ export default function App() {
     }
 
     return () => document.removeEventListener("click", handleAnchorClick);
-  }, []);
+  }, [route]);
 
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
@@ -141,7 +151,7 @@ export default function App() {
     elements.forEach((element) => observer.observe(element));
 
     return () => observer.disconnect();
-  }, []);
+  }, [route]);
 
   return (
     <>

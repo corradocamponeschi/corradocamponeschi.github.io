@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { mailtoLink, offers, whatsappLink } from "../content";
+import { mailtoLink, offers, offersSection, whatsappLink } from "../content";
 import { LinkButton } from "./LinkButton";
 
 export function Offers() {
@@ -8,16 +8,8 @@ export function Offers() {
       <div className="section-shell offers-grid">
         <div className="section-heading">
           <h2 id="offers-title">Scegli il tuo primo passo</h2>
-          <p>
-            Ogni percorso nasce da un ascolto iniziale: del corpo, della storia
-            personale, del momento di vita e del desiderio reale di
-            trasformazione.
-          </p>
-          <p className="offers-note">
-            I percorsi sono in fase di apertura progressiva. Puoi scrivermi per
-            ricevere informazioni, entrare nella lista di interesse o valutare
-            insieme il primo passo più adatto a te.
-          </p>
+          <p>{offersSection.intro}</p>
+          <p className="offers-note">{offersSection.invitation}</p>
         </div>
 
         <div className="offer-list">

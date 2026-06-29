@@ -15,9 +15,15 @@ export function Manifesto() {
 
           <div className="manifesto-declaration">
             <h3>{authenticSexualityManifesto.title}</h3>
-            {authenticSexualityManifesto.paragraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <p className="manifesto-intro">{authenticSexualityManifesto.intro}</p>
+            <ol>
+              {authenticSexualityManifesto.principles.map((principle, index) => (
+                <li key={principle}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <p>{principle}</p>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </div>

@@ -1,19 +1,14 @@
 import { Instagram, Mail, MessageCircle } from "lucide-react";
-import { contactLinks, freeCallMessage, instagramLink, mailtoLink, whatsappLink } from "../content";
-import lakeImage from "../assets/lake-sunset.webp";
+import { contactLinks, finalContact, freeCallMessage, instagramLink, mailtoLink, whatsappLink } from "../content";
+import portraitImage from "../assets/corrado-closeup.jpg";
 
 export function Contact() {
   return (
     <section className="contact section-anchor reveal" id="contatti" aria-labelledby="contact-title">
       <div className="section-shell contact-grid">
         <div className="contact-card">
-          <h2 id="contact-title">Vuoi iniziare da una conversazione?</h2>
-          <p>
-            Se senti che questo lavoro risuona con il momento che stai
-            attraversando, puoi scrivermi per una call conoscitiva gratuita. Sarà uno
-            spazio semplice e senza impegno per capire quale percorso può essere
-            più adatto a te.
-          </p>
+          <h2 id="contact-title">{finalContact.title}</h2>
+          <p>{finalContact.body}</p>
           <div className="contact-actions" aria-label="Canali di contatto">
             <a href={whatsappLink(freeCallMessage)} target="_blank" rel="noreferrer">
               <MessageCircle size={18} aria-hidden="true" />
@@ -30,19 +25,8 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="contact-glyph" aria-hidden="true">
-          <svg viewBox="0 0 180 260">
-            <path d="M90 16v228" />
-            <circle cx="90" cy="72" r="34" />
-            <path d="M42 139c20-42 76-42 96 0" />
-            <path d="M56 195c18-26 50-26 68 0" />
-            <path d="M90 106v88M64 150h52" />
-            <circle cx="90" cy="232" r="10" />
-          </svg>
-        </div>
-
         <figure className="contact-image">
-          <img src={lakeImage} alt="Lago di Bracciano al tramonto" />
+          <img src={portraitImage} alt="Corrado Camponeschi in ascolto tra le radici degli alberi" />
         </figure>
       </div>
     </section>

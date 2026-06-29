@@ -1,6 +1,7 @@
 import { Instagram, Mail, MessageCircle, Youtube } from "lucide-react";
 import {
   contactLinks,
+  footerManifesto,
   freeCallMessage,
   instagramLink,
   mailtoLink,
@@ -16,12 +17,11 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <p className="footer-manifesto">
-        Dal controllo alla presenza. Dalla prestazione all’intimità. Dal corpo
-        dimenticato al corpo vivo.
+        {footerManifesto}
       </p>
       <div className="footer-main">
         <div>
-          <a className="footer-brand" href="/">
+          <a className="footer-brand" href="/#top">
             Corrado Camponeschi
           </a>
           <div className="footer-line" aria-hidden="true" />

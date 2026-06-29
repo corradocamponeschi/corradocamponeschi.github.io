@@ -12,7 +12,7 @@ import {
   type InternalPagePath,
 } from "../content";
 import { LinkButton } from "./LinkButton";
-import portraitImage from "../assets/corrado-tree-portrait.webp";
+import portraitImage from "../assets/corrado-closeup.jpg";
 
 type InternalPageProps = {
   route: InternalPagePath;
@@ -117,7 +117,7 @@ function AboutPage() {
     <section className="page-body page-body--soft">
       <div className="section-shell page-two-column page-two-column--about">
         <figure className="page-portrait">
-          <img src={portraitImage} alt="Corrado Camponeschi tra le radici degli alberi" />
+          <img src={portraitImage} alt="Ritratto di Corrado Camponeschi tra le radici degli alberi" />
         </figure>
         <div className="page-copy-block">
           <h2>Una ricerca che passa dal corpo</h2>

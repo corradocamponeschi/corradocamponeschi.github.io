@@ -23,7 +23,7 @@ export type InternalPagePath =
 export type MethodArea = {
   title: string;
   summary: string;
-  icon: "seat" | "breath" | "circle" | "heart" | "flame" | "star";
+  icon: "body" | "breath" | "circle" | "heart";
 };
 
 export type Offer = {
@@ -38,7 +38,8 @@ export type Project = {
   title: string;
   summary: string;
   cta: string;
-  tone: "blue" | "copper";
+  tone: "thotasana" | "intimate";
+  mark: "thotasana" | "intimate";
   message: string;
 };
 
@@ -66,25 +67,29 @@ export const navItems: NavItem[] = [
 export const openingManifesto = {
   title: "Non è una questione di tempo.\nÈ una questione di presenza.",
   paragraphs: [
-    "Molti uomini vivono la sessualità come una prova: essere all’altezza, controllare il corpo, soddisfare l’altro, non mostrare fragilità.",
+    "Molte persone vivono la sessualità come una prova: essere all’altezza, controllare il corpo, soddisfare l’altro, non mostrare fragilità.",
     "Il mio lavoro nasce per accompagnare un passaggio diverso: dalla prestazione alla presenza, dal controllo all’ascolto, dalla vergogna alla possibilità di abitare il desiderio con più verità.",
   ],
 };
 
 export const authenticSexualityManifesto = {
   title: "Manifesto della Sessualità Autentica",
-  paragraphs: [
-    "Credo che la sessualità non sia soltanto tecnica, prestazione o piacere fisico. È un luogo dove si incontrano corpo, emozione, desiderio, paura, memoria, spiritualità e relazione.",
-    "Molti uomini imparano a vivere la sessualità come prova, conquista o conferma del proprio valore. Io propongo un’altra via: una sessualità più lenta, presente, consapevole, capace di ascoltare il corpo e di incontrare davvero l’altro.",
-    "Il lavoro non è diventare perfetti. È diventare più veri.",
+  intro:
+    "Credo che la sessualità non sia soltanto tecnica, prestazione o piacere fisico. È un luogo dove si incontrano corpo, emozioni, desiderio, paura, memoria, spiritualità e relazione.",
+  principles: [
+    "Non lavoriamo per diventare perfetti. Lavoriamo per diventare più veri.",
+    "Il corpo non è qualcosa da controllare. È un luogo da abitare, ascoltare e rispettare.",
+    "Il desiderio non si forza e non si misura: si incontra, si ascolta e si lascia emergere nel suo ritmo.",
+    "La sessualità può diventare uno spazio di relazione, presenza, responsabilità e trasformazione.",
+    "L’intimità nasce dove verità, confini, presenza e rispetto possono stare insieme.",
   ],
 };
 
 export const marqueeTexts = {
   hero:
-    "Dalla prestazione alla presenza. · Dal controllo all’ascolto. · Dalla tensione alla vitalità. · Dalla vergogna alla verità.",
+    "Dalla prestazione alla presenza - Dal controllo all’ascolto - Dalla tensione alla vitalità - Dalla vergogna alla verità - ",
   method:
-    "Corpo · Respiro · Desiderio · Energia · Relazione · Confini · Intimità · Presenza ·",
+    "Corpo · Respiro · Desiderio · Energia · Relazione · Confini · Intimità · Presenza · ",
 };
 
 export const thresholdQuotes = [
@@ -107,7 +112,7 @@ export const methodAreas: MethodArea[] = [
     title: "Corpo",
     summary:
       "Ritornare alla percezione, al respiro, al radicamento e alle sensazioni, imparando ad abitare il corpo con più presenza.",
-    icon: "seat",
+    icon: "body",
   },
   {
     title: "Respiro",
@@ -131,17 +136,17 @@ export const methodAreas: MethodArea[] = [
 
 export const offers: Offer[] = [
   {
-    title: "Percorso individuale per uomini",
+    title: "Percorso individuale",
     summary:
-      "Uno spazio di accompagnamento per uomini che desiderano comprendere meglio il proprio corpo, la sessualità, l’ansia, la vergogna, il rapporto con il piacere e con l’intimità.",
+      "Uno spazio di accompagnamento per uomini, donne e persone che desiderano lavorare sul corpo, sulla sessualità, sull’intimità e sulle relazioni, con attenzione alla propria storia e al proprio ritmo.",
     cta: "Richiedi una call individuale",
     message:
       "Ciao Corrado, vorrei richiedere una call individuale per capire quale percorso può essere adatto a me.",
   },
   {
-    title: "Cerchi di uomini",
+    title: "Cerchio di uomini",
     summary:
-      "Spazi di ascolto, presenza e fratellanza per attraversare identità, emozioni, sessualità, vulnerabilità, relazione con il maschile e con il femminile.",
+      "Uno spazio di ascolto, presenza e fratellanza in cui coltivare confronto autentico, maturità emotiva e una relazione più sana e consapevole con il maschile.",
     cta: "Partecipa al prossimo cerchio",
     message:
       "Ciao Corrado, vorrei ricevere informazioni sul prossimo cerchio di uomini.",
@@ -168,22 +173,21 @@ export const offers: Offer[] = [
 
 export const audienceColumns: AudienceColumn[] = [
   {
-    title: "È per te se…",
+    title: "È per te se:",
     points: [
-      "Ti senti spesso nella prestazione.",
-      "Hai difficoltà a sentire il corpo durante l’intimità.",
-      "Vivi vergogna, ansia o chiusura nella sessualità.",
+      "Ti senti spesso nella prestazione e fai fatica a sentire il corpo durante l’intimità.",
+      "Vivi chiusura o vergogna nella sessualità.",
       "Desideri portare più presenza e ascolto nelle relazioni.",
       "Sei attratto da pratiche corporee, spirituali e somatiche, ma cerchi un contenitore serio e rispettoso.",
     ],
   },
   {
-    title: "Non è per te se…",
+    title: "Non è per te se:",
     points: [
       "Cerchi una tecnica magica per controllare l’altro.",
       "Vuoi solo aumentare la performance sessuale.",
-      "Non sei disposto a incontrare emozioni, vulnerabilità e responsabilità.",
-      "Cerchi terapia clinica o trattamento medico: in quel caso è importante rivolgersi a professionisti sanitari qualificati.",
+      "Non sei disposto/a a incontrare emozioni, vulnerabilità e parti profonde di te.",
+      "Cerchi una terapia clinica.",
     ],
   },
 ];
@@ -194,20 +198,38 @@ export const projects: Project[] = [
     summary:
       "Un progetto di ricerca e divulgazione esoterica sui nessi tra sistema yogico e astrologia egizia, in collaborazione con Jacopo Trombetti.",
     cta: "Scopri ThotAsana",
-    tone: "blue",
+    tone: "thotasana",
+    mark: "thotasana",
     message:
       "Ciao Corrado, vorrei scoprire il progetto ThotAsana e i suoi futuri percorsi.",
   },
   {
-    title: "Unione Profonda",
+    title: "Rivoluzione Intima",
     summary:
-      "Un percorso con Anna Elena Comune dedicato a sessualità autentica, cura, arte, psicologia e spiritualità.",
-    cta: "Scopri Unione Profonda",
-    tone: "copper",
+      "Un progetto autonomo dedicato a intimità, sessualità autentica, corpo, relazione e trasformazione, attraverso pratiche e percorsi esperienziali.",
+    cta: "Scopri Rivoluzione Intima",
+    tone: "intimate",
+    mark: "intimate",
     message:
-      "Ciao Corrado, vorrei ricevere informazioni su Unione Profonda e sui percorsi disponibili.",
+      "Ciao Corrado, vorrei ricevere informazioni su Rivoluzione Intima e sui percorsi futuri.",
   },
 ];
+
+export const offersSection = {
+  intro:
+    "Ogni percorso nasce da un ascolto iniziale del corpo, della storia personale, del momento di vita e del desiderio reale di trasformazione.",
+  invitation:
+    "Puoi scrivermi per ricevere informazioni, entrare nella lista di interesse o iniziare con una prima conversazione. Insieme valuteremo con calma quale percorso può sostenerti meglio, senza pressioni e nel rispetto del tuo tempo.",
+};
+
+export const finalContact = {
+  title: "Puoi iniziare anche senza avere tutto chiaro.",
+  body:
+    "Una call conoscitiva gratuita può essere il primo spazio di ascolto: semplice, senza impegno, per comprendere da dove partire e quale percorso può essere più adatto a te.",
+};
+
+export const footerManifesto =
+  "Dal controllo alla presenza, dalla prestazione all’intimità, dal corpo contratto al corpo cosciente.";
 
 export const freeCallMessage =
   "Ciao Corrado, vorrei prenotare una call conoscitiva gratuita per capire da dove iniziare.";

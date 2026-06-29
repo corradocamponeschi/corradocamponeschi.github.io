@@ -1,5 +1,5 @@
 import { approachParagraphs } from "../content";
-import lakeImage from "../assets/lake-sunset.webp";
+import portraitImage from "../assets/corrado-closeup.jpg";
 import { VerticalGlyph } from "./Symbols";
 
 export function Approach() {
@@ -14,7 +14,7 @@ export function Approach() {
           ))}
         </div>
         <figure className="framed-image">
-          <img src={lakeImage} alt="Lago al tramonto con canneti e colline" />
+          <img src={portraitImage} alt="Ritratto di Corrado Camponeschi tra le radici degli alberi" />
         </figure>
       </div>
     </section>

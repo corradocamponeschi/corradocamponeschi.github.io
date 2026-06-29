@@ -17,7 +17,7 @@ export function Header({ currentPath }: HeaderProps) {
 
   return (
     <header className="site-header">
-      <a className="brand" href="/" aria-label="Vai alla homepage">
+      <a className="brand" href="/#top" aria-label="Vai all’inizio della homepage">
         <span className="brand-mark" aria-hidden="true">
           <img src={brandSymbol} alt="" />
         </span>
