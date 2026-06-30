@@ -1,4 +1,4 @@
-import { methodAreas } from "../content";
+import { methodAreas, methodSection } from "../content";
 import { PathSymbol } from "./Symbols";
 
 export function Paths() {
@@ -6,16 +6,9 @@ export function Paths() {
     <section className="paths method section-anchor reveal" id="metodo" aria-labelledby="method-title">
       <div className="section-shell">
         <div className="section-heading section-heading--center">
-          <h2 id="method-title">Il metodo</h2>
-          <p>
-            Un lavoro integrato su corpo, respiro, confini e intimità.
-          </p>
-          <p className="section-intro">
-            Il percorso unisce pratiche corporee, respiro, yoga, bioenergetica,
-            comunicazione empatica e strumenti della tradizione tantrica e
-            taoista. Non come tecniche da accumulare, ma come vie per tornare a
-            sentire.
-          </p>
+          <h2 id="method-title">{methodSection.title}</h2>
+          <p>{methodSection.lead}</p>
+          <p className="section-intro">{methodSection.description}</p>
         </div>
 
         <div className="paths-rail">

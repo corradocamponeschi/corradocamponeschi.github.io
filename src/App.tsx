@@ -160,12 +160,12 @@ export default function App() {
         {route === "/" ? (
           <>
             <Hero />
-            <MarqueeText text={marqueeTexts.hero} />
+            <MarqueeText items={marqueeTexts.hero} separator="line" />
             <Manifesto />
             <ThresholdQuote>{thresholdQuotes[0]}</ThresholdQuote>
             <Approach />
             <Paths />
-            <MarqueeText text={marqueeTexts.method} tone="dark" />
+            <MarqueeText items={marqueeTexts.method} tone="dark" />
             <ThresholdQuote>{thresholdQuotes[1]}</ThresholdQuote>
             <Offers />
             <ThresholdQuote>{thresholdQuotes[2]}</ThresholdQuote>

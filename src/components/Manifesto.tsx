@@ -5,7 +5,20 @@ export function Manifesto() {
     <section className="manifesto section-anchor reveal" id="manifesto" aria-labelledby="manifesto-title">
       <div className="section-shell manifesto-grid">
         <div className="manifesto-lead">
-          <h2 id="manifesto-title">{openingManifesto.title}</h2>
+          <h2
+            id="manifesto-title"
+            aria-label={`${openingManifesto.titleLines.join(" ")} ${openingManifesto.conclusion}`}
+          >
+            <span className="manifesto-lead-question" aria-hidden="true">
+              {openingManifesto.titleLines.map((line) => (
+                <span key={line}>{line}</span>
+              ))}
+            </span>
+            <span className="manifesto-lead-conclusion" aria-hidden="true">
+              {openingManifesto.conclusion}
+            </span>
+          </h2>
+          <blockquote>{openingManifesto.sideQuote}</blockquote>
         </div>
 
         <div className="manifesto-copy">

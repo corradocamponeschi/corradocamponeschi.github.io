@@ -57,15 +57,23 @@ export const contactLinks: ContactLinks = {
 
 export const navItems: NavItem[] = [
   { label: "Classe gratuita", href: "/classe-gratuita" },
-  { label: "Il metodo", href: "/il-metodo" },
+  { label: "Il Metodo", href: "/il-metodo" },
   { label: "Chi sono", href: "/chi-sono" },
   { label: "Percorsi", href: "/percorsi" },
   { label: "Eventi & Corsi", href: "/eventi-corsi" },
   { label: "Blog", href: "/blog" },
 ];
 
+export const heroContent = {
+  intro:
+    "Percorsi individuali, di coppia e di gruppo per chi desidera uscire dalla prestazione e ritrovare presenza, piacere, ascolto e verità nel corpo.",
+  freeCallNote: "Call gratuita, semplice e senza impegno.",
+};
+
 export const openingManifesto = {
-  title: "Non è una questione di tempo.\nÈ una questione di presenza.",
+  titleLines: ["Non è una", "questione di", "tempo:"] as const,
+  conclusion: "È una questione di presenza.",
+  sideQuote: "Il corpo non chiede prestazione. Chiede presenza.",
   paragraphs: [
     "Molte persone vivono la sessualità come una prova: essere all’altezza, controllare il corpo, soddisfare l’altro, non mostrare fragilità.",
     "Il mio lavoro nasce per accompagnare un passaggio diverso: dalla prestazione alla presenza, dal controllo all’ascolto, dalla vergogna alla possibilità di abitare il desiderio con più verità.",
@@ -86,18 +94,37 @@ export const authenticSexualityManifesto = {
 };
 
 export const marqueeTexts = {
-  hero:
-    "Dalla prestazione alla presenza - Dal controllo all’ascolto - Dalla tensione alla vitalità - Dalla vergogna alla verità - ",
-  method:
-    "Corpo · Respiro · Desiderio · Energia · Relazione · Confini · Intimità · Presenza · ",
+  hero: [
+    "Dalla prestazione alla presenza",
+    "Dal controllo all’ascolto",
+    "Dalla tensione alla vitalità",
+    "Dalla vergogna alla verità",
+  ],
+  method: [
+    "Corpo",
+    "Respiro",
+    "Desiderio",
+    "Energia",
+    "Relazione",
+    "Confini",
+    "Intimità",
+    "Presenza",
+  ],
 };
 
 export const thresholdQuotes = [
-  "Il corpo sa prima della mente.",
-  "Non devi diventare più performante. Puoi diventare più presente.",
-  "La sessualità non è una prova. È un luogo di verità.",
-  "Il desiderio ha bisogno di spazio, non di controllo.",
+  "Il corpo sa ben prima della mente.",
+  "Non devi più performare. Puoi semplicemente diventare più presente.",
+  "L’intimità nasce dove smetti di controllare.",
+  "Il piacere non si forza. Si incontra.",
 ];
+
+export const methodSection = {
+  title: "Il Metodo",
+  lead: "Un lavoro integrato su corpo, respiro, confini e intimità.",
+  description:
+    "Il percorso unisce pratiche corporee, respiro, yoga, bioenergetica, comunicazione empatica e strumenti della tradizione tantrica e taoista. Non come tecniche da accumulare, ma come vie per tornare a sentire.",
+};
 
 export const approachParagraphs = [
   "Sono Corrado Camponeschi. Il mio percorso nasce dall’incontro tra ricerca, corpo e spiritualità.",
@@ -253,7 +280,7 @@ export const internalPages: Record<
     message: freeCallMessage,
   },
   "/il-metodo": {
-    title: "Il metodo",
+    title: "Il Metodo",
     intro:
       "Una struttura di studio e pratica che unisce corpo, respiro, confini e intimità per trasformare la sessualità in presenza incarnata.",
     placeholder:
